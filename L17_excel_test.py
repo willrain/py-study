@@ -4,6 +4,9 @@ import openpyxl
 wb = openpyxl.load_workbook('L17_test.xlsx')
 print(type(wb))
 
+
+
+
 # 시트 접근
 for sheet_name in wb.sheetnames:  # sheet 목록 반환
     print(sheet_name)

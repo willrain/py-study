@@ -1,11 +1,17 @@
 import openpyxl
 
+
 def find_parks_not_in_us():
     # 엑셀파일(워크북) 열기
     wb = openpyxl.load_workbook('L17_test.xlsx')
 
+
     # 워크시트 열기
+    #sheet = wb.get_sheet_by_name['Sheet1']
     sheet = wb['Sheet1']
+
+    sheet = wb.g['Sheet2']
+
 
     # 결과를 저장할 리스트
     park_list = []
